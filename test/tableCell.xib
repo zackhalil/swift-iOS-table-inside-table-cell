@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="290" id="K9s-io-soZ" customClass="TableCell" customModule="test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="497" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K9s-io-soZ" id="yrf-OP-HmE">
+                <rect key="frame" x="0.0" y="0.0" width="497" height="289.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xxJ-bc-F2X">
+                        <rect key="frame" x="8" y="8" width="481" height="273.5"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="xxJ-bc-F2X" secondAttribute="bottom" id="Fvx-dt-Lrv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xxJ-bc-F2X" secondAttribute="trailing" id="QSB-Ve-GPD"/>
+                    <constraint firstItem="xxJ-bc-F2X" firstAttribute="leading" secondItem="yrf-OP-HmE" secondAttribute="leadingMargin" id="Yfq-Yj-EqW"/>
+                    <constraint firstItem="xxJ-bc-F2X" firstAttribute="top" secondItem="yrf-OP-HmE" secondAttribute="topMargin" id="qzh-JL-Vci"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="childTableView" destination="xxJ-bc-F2X" id="Aam-fb-ULv"/>
+            </connections>
+            <point key="canvasLocation" x="377.5" y="145"/>
+        </tableViewCell>
+    </objects>
+</document>
